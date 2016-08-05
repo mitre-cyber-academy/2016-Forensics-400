@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "59724:59724"
+     - "15453:15453"
+    volumes:
+     - .:/code
