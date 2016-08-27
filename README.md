@@ -1,7 +1,5 @@
 # **WIPE.SH IS A DANGEROUS FILE.  THE FIRST LINE STOPS THE PROGRAM FROM DELETING THE FILE SYSTEM BUT PLEASE BE CAREFUL.  REMOVE THE FIRST LINE ONLY WHEN YOU HAVE PUT THE FILE INTO THE VM**  #
 
-**Not Complete - Server needs static IP which will be put in all C# programs**
-
 Malware Analysis requires competitors to stop a rogue program on their VM from destroying the VM.  However they also have to feed the program information in order to find the flag.
 
 # Server Installation #

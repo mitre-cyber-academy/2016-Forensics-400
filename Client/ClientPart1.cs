@@ -25,7 +25,7 @@ namespace ClientTesting
 
 			try{
 				soc.ReceiveTimeout = 500;
-				soc.Connect(ipLocalEndPoint);
+				soc.Connect("10.0.1.24", port);
 
 				int bytes = 1;
 				string page = "";
