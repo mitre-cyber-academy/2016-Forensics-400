@@ -15,7 +15,9 @@ docker build .
 
 # Client Installation #
 
-Client must not have a password or password must be put into wipe.sh
+32bit and 64bit versions have been included in this repo (under /Client)
+
+Client password has been set to mitre
 
 copy ClientPart1.cs, wipe.sh, and rc.local to the VM
 
