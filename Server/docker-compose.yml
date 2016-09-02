@@ -7,3 +7,4 @@ services:
      - "15453:15453"
     volumes:
      - .:/code
+    restart: unless-stopped
