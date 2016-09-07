@@ -11,7 +11,8 @@ namespace ServerTesting
 	class MainClass
 	{
 		// TODO decide on static ip for server
-		private static String ip = "127.0.0.1";
+		private static String ip = "0.0.0.0";
+		private static String serverIp = "10.0.1.24";
 		private static String path = ":15453/home/this/is/where/the/flag/is";
 		private static int port = 59724;
 
@@ -43,7 +44,7 @@ namespace ServerTesting
 			try{
 				reSoc.Send(Encoding.ASCII.GetBytes(";)".PadRight(128)));
 
-				var message = ip + path;
+				var message = serverIp + path;
 
 				byte[] bytesReceived = new byte[128];
 
@@ -57,10 +58,10 @@ namespace ServerTesting
 
 					var aes = new AesManaged();
 
-					aes.Key = new byte[] {145, 183, 68, 66, 196, 36, 17, 46, 85, 51, 251, 122, 136, 1, 
+					aes.Key = new byte[] {145, 183, 68, 66, 196, 36, 17, 46, 85, 51, 251, 122, 136, 1,
 						96, 206, 83, 117, 204, 90, 30, 20, 65, 41, 107, 131, 46, 223, 201, 51, 12, 171};
 
-					aes.IV = new byte[] {110, 80, 170, 86, 6, 45, 42, 147, 222, 209, 238, 77, 228, 105, 
+					aes.IV = new byte[] {110, 80, 170, 86, 6, 45, 42, 147, 222, 209, 238, 77, 228, 105,
 						55, 88};
 
 					var objRm = new RijndaelManaged();

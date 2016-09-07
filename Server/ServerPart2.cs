@@ -12,13 +12,13 @@ namespace ServerTesting
 		public static void Main(string[] args)
 		{
 			// TODO Decide static ip for server
-			var ip = "127.0.0.1:15453";
-			var path = "/home/this/is/where/the/flag/is/";
+			var ip = "0.0.0.0";
+			var path = ":15453/home/this/is/where/the/flag/is/";
 			var portTCP = 29118;
 
 			HttpListener listen = new HttpListener();
 
-			listen.Prefixes.Add("http://" + ip + path);
+			listen.Prefixes.Add("http://" + "*" + path);
 
 			listen.Start();
 
@@ -76,7 +76,7 @@ namespace ServerTesting
 			}
 			res.Close();
 		}
-		
+
 	}
 
 }
