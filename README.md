@@ -43,9 +43,9 @@ sudo chmod 755 /bin/ClientPart1.exe
 sudo chmod 755 /etc/rc.local
 ```
 
-
+The client can be downloaded from [here](https://drive.google.com/file/d/0B48Lv30KB1seWTBuOEZ5TGdMN2M/view?usp=sharing).
 
 # Solution #
-There are many ways to solve this challenge.  One of the easiest ways is to intercept the connection Client makes with Server.  Intercept Server’s first message to Client and send your own message.  Let Server and Client continue to communicate.  Eventually Client will connect to another address on the Server.  Hit the new address with a POST request and it will send the flag.  
+There are many ways to solve this challenge.  One of the easiest ways is to intercept the connection Client makes with Server.  Intercept Server’s first message to Client and send your own message.  Let Server and Client continue to communicate.  Eventually Client will connect to another address on the Server.  Hit the new address with a POST request and it will send the flag.
 
 The flag is MCA-7190CE16.
